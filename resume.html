@@ -6,17 +6,10 @@
   <title>5S My Life — Resume</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <img src="logo.svg" alt="5S My Life Logo" class="logo" />
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-    </nav>
-  </aside>
+  <!-- Sidebar (loaded dynamically) -->
+  <div data-include="sidebar.html"></div>
 
   <!-- Main Resume Content -->
   <main>
@@ -26,9 +19,10 @@
     <section aria-label="contact" style="margin-bottom: 12px;">
       <p style="margin:0;font-weight:700;">Elliot Baines</p>
       <p style="margin:4px 0 0 0;">
-        Fort Collins, CO · <a href="mailto:elliot@5smylife.com">elliot@5smylife.com</a> · 
+        Fort Collins, CO · 
+        <a href="mailto:elliot@5smylife.com">elliot@5smylife.com</a> · 
         <a href="Resume.pdf" download>Download PDF</a>
-     </p>
+      </p>
     </section>
 
     <!-- Profile -->
@@ -108,6 +102,7 @@
       </article>
     </section>
 
+    <!-- Skills -->
     <section>
       <h2>Skills</h2>
       <ul>
@@ -116,7 +111,6 @@
         <li>Network design, humanitarian logistics, trade compliance</li>
       </ul>
     </section>
-
   </main>
 
   <!-- Footer -->
@@ -124,5 +118,8 @@
     <span>© 2025 5S My Life</span>
     <span>Sort • Set in Order • Shine • Standardize • Sustain</span>
   </footer>
+
+  <!-- JavaScript include handler -->
+  <script src="include.js"></script>
 </body>
 </html>

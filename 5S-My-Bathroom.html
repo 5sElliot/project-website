@@ -3,21 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>5S My Life — Clean Layout</title>
+  <title>5S My Bathroom</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <img src="logo.svg" alt="5S My Life Logo" class="logo" />
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-    </nav>
-  </aside>
+  <!-- Sidebar (now loaded dynamically) -->
+  <div data-include="sidebar.html"></div>
 
   <!-- Main content -->
   <main>
@@ -25,12 +17,21 @@
       <h1>5S My Bathroom</h1>
 
       <h2>Introduction</h2>
-      <p>Like many changes, my decision to 5S my life was spurred by a problem in need of a solution. 
-      After reading The Toyota Way by Jeffrey Liker, I found myself evaluating my life in accordance with the principles of the Toyota Production System (TPS). Then I fell victim to a bout of food poisoning, but I was unable to find my medicine in my completely cluttered bathroom. 
-      Remembering back to TPS I decided that many of my problems could be solved utilizing the system’s principles. This is when I decided that to start living life to the fullest, I would have to 5S my life.</p>
+      <p>
+        Like many changes, my decision to 5S my life was spurred by a problem in need of a solution. 
+        After reading The Toyota Way by Jeffrey Liker, I found myself evaluating my life in accordance 
+        with the principles of the Toyota Production System (TPS). Then I fell victim to a bout of food poisoning, 
+        but I was unable to find my medicine in my completely cluttered bathroom. 
+        Remembering back to TPS I decided that many of my problems could be solved utilizing the system’s principles. 
+        This is when I decided that to start living life to the fullest, I would have to 5S my life.
+      </p>
 
       <h2>The Roots of 5S</h2>
-      <p>First let’s establish what 5S and the Toyota Production System are. Between 1948-1975 two Japanese industrial engineers, Taiichi Ohno and Eiji Toyoda decided to create eight principles to reduce the ails that plague traditional manufacturing by defining eight types of waste.</p>
+      <p>
+        First let’s establish what 5S and the Toyota Production System are. Between 1948–1975 two Japanese industrial engineers,
+        Taiichi Ohno and Eiji Toyoda decided to create eight principles to reduce the ails that plague traditional manufacturing 
+        by defining eight types of waste.
+      </p>
       <ol>
         <li>Overproduction</li>
         <li>Waiting</li>
@@ -42,26 +43,49 @@
         <li>Waste of underutilized workers</li>
       </ol>
       <p>From these two pillars were founded,</p>
-      <p><strong>Just-in-Time (JIT):</strong> make only what is needed, only when it is needed, and only in the amount that is needed.<br />
-      <strong>Jidoka “Automation with a human touch”:</strong> Create systems that detect and correct problems before they grow.</p>
+      <p>
+        <strong>Just-in-Time (JIT):</strong> make only what is needed, only when it is needed, and only in the amount that is needed.<br />
+        <strong>Jidoka “Automation with a human touch”:</strong> Create systems that detect and correct problems before they grow.
+      </p>
 
       <h2>Applying Lean Thinking at Home</h2>
-      <p>First let’s discuss how JIT impacts personal life. We all subconsciously hoard items, every time I go to the supermarket I overbuy, and items sit in my pantry for what seems like an eternity. This is space in my small apartment being wasted, making my life more complicated and making it harder to find items. Let’s return to my battle with food poisoning. Had I known where my medicine was, I would have saved myself a lot of writhing in pain.</p>
+      <p>
+        First let’s discuss how JIT impacts personal life. We all subconsciously hoard items, every time I go to the supermarket I 
+        overbuy, and items sit in my pantry for what seems like an eternity. This is space in my small apartment being wasted, 
+        making my life more complicated and making it harder to find items. Let’s return to my battle with food poisoning. 
+        Had I known where my medicine was, I would have saved myself a lot of writhing in pain.
+      </p>
 
-      <p>Now let’s talk about Jidoka, which is built on four basic principles detection, stoppage response, and prevention. Humans like getting lazy, sometimes we misplace items whether intentionally or purposefully. This is why I created a system that guards against abnormalities and provides actionable data on when and where these errors occur.</p>
+      <p>
+        Now let’s talk about Jidoka, which is built on four basic principles detection, stoppage response, and prevention. 
+        Humans like getting lazy, sometimes we misplace items whether intentionally or purposefully. 
+        This is why I created a system that guards against abnormalities and provides actionable data on when and where these errors occur.
+      </p>
 
       <h2>How I 5S’d My Bathroom</h2>
-      <p>So how did I 5S my bathroom? I started by evaluating the pain points, especially the ones that caused me to misplace items. Sometimes drawers would be full, other times there would be so many items scattered in a cluttered drawer I couldn’t locate what I was looking for. In either of these situations, I would leave whatever I wanted to stow onto my counter, collecting dust until the inevitable day I had enough and would seek to hide the mess.</p>
+      <p>
+        So how did I 5S my bathroom? I started by evaluating the pain points, especially the ones that caused me to misplace items. 
+        Sometimes drawers would be full, other times there would be so many items scattered in a cluttered drawer I couldn’t locate what 
+        I was looking for. In either of these situations, I would leave whatever I wanted to stow onto my counter, collecting dust until 
+        the inevitable day I had enough and would seek to hide the mess.
+      </p>
 
-      <p>After evaluating these points, I took every item out, from Acetaminophen to Zeiss Eyeglass Wipes. I then assigned every drawer a purpose.</p>
+      <p>
+        After evaluating these points, I took every item out, from Acetaminophen to Zeiss Eyeglass Wipes. 
+        I then assigned every drawer a purpose.
+      </p>
       <ul>
         <li>Top drawers: “A-Items” – daily use and small items</li>
         <li>Middle drawers: “B-Items” – occasional use and medium items</li>
         <li>Bottom drawers: “C-Items” – rare use</li>
         <li>Under the sink: Bulk items like toilet paper and cleaners.</li>
       </ul>
-      <p>Once everything was in its home, I stepped back and looked over my work. I threw out unused products, consolidated half-empty boxes, and finally felt the satisfaction of having a clean, efficient workspace.
-      I thought back to my time at amazon, not only did everything have its place but  everything was tracked. I decided that my next mission would be to build a digital system to track my life like a warehouse.</p>
+      <p>
+        Once everything was in its home, I stepped back and looked over my work. I threw out unused products, consolidated half-empty boxes, 
+        and finally felt the satisfaction of having a clean, efficient workspace.
+        I thought back to my time at Amazon — not only did everything have its place but everything was tracked. 
+        I decided that my next mission would be to build a digital system to track my life like a warehouse.
+      </p>
     </article>
   </main>
 
@@ -70,5 +94,8 @@
     <span>© 2025 5S My Life</span>
     <span>Sort • Set in Order • Shine • Standardize • Sustain</span>
   </footer>
+
+  <!-- JavaScript for dynamic sidebar include -->
+  <script src="include.js"></script>
 </body>
 </html>
