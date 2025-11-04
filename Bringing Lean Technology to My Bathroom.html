@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bringing Lean Technology to My Bathroom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Sidebar (now loaded dynamically) -->
+  <div data-include="sidebar.html"></div>
+
+  <!-- Main content -->
+  <main>
+    <article>
+      <h1>Bringing Lean Technology to My Bathroom</h1>
+
+      <h2>Introduction</h2>
+      <p>
+        After I organized my bathroom, I realized that physical organization was only half the battle, the real challenge lies in the last two steps of 5S: <strong>Standardize</strong> and <strong>Sustain.</strong> 
+        It was great knowing where everything was, but humans are lazy. Without a system encouraging long-term compliance, my bathroom was bound to return to its previous disorganized state.
+      </p>
+
+      <p>
+        Drawing on my experience at Amazon and other production environments, I decided to create a <strong>technologically backed system for item tracking.</strong> 
+        This would allow me to view real-time inventory, encourage efficient procurement, and even enable KPI tracking. 
+        Using the power of <strong>Python, CSV files, Raspberry Pi,</strong> and a bit of cursing at the Linux shell, I built a localized <strong>warehouse management system (WMS)</strong> perfect for my small bathroom.
+      </p>
+
+      <h2>Creating a Personal Database</h2>
+      <p>
+        I decided the best solution to tracking everything digitally was to take the inventory list I had made while stowing my items and convert it into a machine-oriented <strong>CSV file.</strong> 
+        This included each of the following fields:
+      </p>
+      <ul>
+        <li><strong>Name</strong></li>
+        <li><strong>Location</strong></li>
+        <li><strong>Location Code</strong> (BR-DRX-XX format)</li>
+        <li><strong>Unique Identifier</strong></li>
+      </ul>
+
+      <p>
+        For packaged items, I used <strong>UPC codes.</strong> 
+        For unmarked items like toilet paper, I created my own custom <strong>alphanumeric tags</strong> to identify each product.
+      </p>
+
+      <p>
+        With the data structured, I wrote a <strong>Flask web app</strong> that turned the CSV file into an HTML table. 
+        This table allowed me to quickly view the items in each location. 
+        I also added a searchable field to add, remove, or move item locations with a simple click. 
+        All changes were instantly written to the CSV file, simple to edit now, but primed for conversion to SQL when the need arises.
+      </p>
+
+      <p>
+        Additionally, every movement is tracked. I plan to review the data weekly and create dashboards to identify areas for improvement.
+      </p>
+
+      <h2>Hardware Setup</h2>
+      <p>
+        For testing, I hosted the app on my laptop, but every time it went to sleep or I had to go to class, it disconnected. 
+        To solve this, I migrated the program to a <strong>Raspberry Pi 4,</strong> turning it into a 24/7 <strong>microserver</strong> connected directly to my router and consuming almost no power.
+      </p>
+
+      <p>
+        I also purchased a <strong>Kindle Fire tablet</strong> to serve as a dedicated client. 
+        I keep it in my bathroom where it connects to my server by default, a small reminder of my time at Amazon. 
+        Connected to the Kindle is a <strong>Bluetooth QR code scanner,</strong> enabling quick and seamless edits while saving countless hours of typing on the tablet’s keyboard. 
+        Whenever I scan an item, it instantly pulls up its entry for tracking.
+      </p>
+
+      <h2>System Capabilities</h2>
+      <p>My WMS can:</p>
+      <ul>
+        <li><strong>Track inventory</strong></li>
+        <li><strong>Monitor movement history</strong></li>
+        <li><strong>Provide visibility for procurement</strong></li>
+      </ul>
+
+      <p>
+        It exemplifies the heart of Lean thinking, reducing waste, correcting errors, and continuously improving.
+      </p>
+
+      <h2>The Lean Connection</h2>
+      <p>
+        By adding a digital layer to 5S, I was able to close out the building phase of the 5S cycle. 
+        The system doesn’t just create data, it creates a <strong>mechanism to monitor the process.</strong> 
+        Every scan, every update, and every movement becomes a benchmark for continuous improvement.
+      </p>
+
+      <p>
+        It exemplifies <strong>Jidoka</strong> in real life. 
+        When something is missing, the system shows when that discrepancy occurred, giving me the tools to fix it. 
+        In a way, this system reminds me of an <strong>Andon</strong> on the Toyota production line, providing visibility and empowering quick correction before issues grow.
+      </p>
+
+      <h2>What’s Next</h2>
+      <p>
+        There’s no such thing as solving all your problems. <strong>Lean thinking is centered around continuous improvement.</strong> 
+        As I use the system, I’ve already recognized areas that can be refined.
+      </p>
+
+      <p>
+        My goal isn’t just to keep my bathroom clean, it’s to <strong>5S my entire life.</strong><br />
+        Technology didn’t replace discipline, it made it measurable.
+      </p>
+    </article>
+  </main>
+
+  <!-- Fixed footer -->
+  <footer>
+    <span>© 2025 5S My Life</span>
+    <span>Sort • Set in Order • Shine • Standardize • Sustain</span>
+  </footer>
+
+  <!-- JavaScript for dynamic sidebar include -->
+  <script src="include.js"></script>
+</body>
+</html>
