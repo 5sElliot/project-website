@@ -136,10 +136,13 @@ p {
 }
 
 .article-image {
-  width: 100%;
+  display: block;
+  max-width: 100%;       /* ensures it never exceeds its container */
+  width: 80%;            /* scales image to 80% of the text width */
   height: auto;
-  margin: 16px 0;
+  margin: 16px auto;     /* centers the image horizontally */
   border-radius: 8px;
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 /* ===== FOOTER ===== */
